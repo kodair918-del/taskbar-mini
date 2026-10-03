@@ -1,0 +1,16 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <!-- 見本: タスクバーの空いているところに時計を出す。クリックで小さな窓、右クリックで終了 -->
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net472</TargetFramework>
+    <UseWPF>true</UseWPF>
+    <LangVersion>latest</LangVersion>
+    <RootNamespace>TaskbarMiniSample</RootNamespace>
+    <AssemblyName>TaskbarMiniSample</AssemblyName>
+    <ApplicationManifest>app.manifest</ApplicationManifest>
+  </PropertyGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\src\TaskbarMini\TaskbarMini.csproj" />
+    <Reference Include="System.Drawing" />
+  </ItemGroup>
+</Project>
